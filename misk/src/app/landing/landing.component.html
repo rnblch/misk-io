@@ -1,12 +1,35 @@
 <div class="main-content" fxLayout="column" fxLayoutAlign="center center">
   <img class="logo" src="../../assets/misk-logo.svg" />
-  <label class="label">Wanna know more?</label>
-  <form *ngIf="userInterested">
+  <label
+    class="label"
+    [ngClass]="labelClicked ? 'labelClicked' : 'label'"
+    (click)="animateLabel()"
+  >
+    if you're wondering</label
+  >
+  <form
+    *ngIf="labelClicked"
+    action="https://docs.google.com/forms/d/e/1FAIpQLSeZEhakPInub_9ZDIer7O5IRY64nhxOIBsyO9DBi5sgZcddMg/formResponse"
+    method="POST"
+    target="_self"
+    id="mG61Hd"
+  >
     <div fxLayout="row">
       <mat-form-field class="email">
-        <input matInput placeholder="Email" [formControl]="email" />
+        <input
+          matInput
+          type="email"
+          autocomplete="email"
+          placeholder="Email"
+          required
+        />
       </mat-form-field>
-      <button class="button" mat-raised-button>Submit</button>
+      <button class="button" mat-raised-button (click)="submit()">
+        Submit
+      </button>
     </div>
+    <label *ngIf="thanksLabel" class="thanksLabel"
+      >Thanks. We'll be in touch soon.</label
+    >
   </form>
 </div>
