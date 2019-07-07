@@ -17,7 +17,7 @@
 }
 
 .button {
-  font-family: 'Kayak Sans', sans-serif;
+  font-family: 'Kayak', sans-serif;
   margin-left: 30px;
   background-color: #7435b2;
   color: white;
@@ -26,7 +26,7 @@
 
 .label {
   color: #fc6f9e;
-  font-family: 'Kayak Sans', sans-serif;
+  font-family: 'Kayak', sans-serif;
   font-size: 22px;
   font-weight: bold;
   text-transform: initial;
@@ -41,24 +41,33 @@
 }
 
 .labelClicked {
-  transform: translate(205px, 50px) rotate(-90deg);
+  font-size: 22px;
+  transform: translate(105%, 180%) rotate(-90deg);
   transition: 1.5s;
 }
 
 .emailSubmitted {
-  transform: translate(50px, 205px) rotate(90deg);
+  transform: translate(180%, 105%) rotate(-90deg);
 }
 
 input {
-  font-family: 'Kayak Sans', sans-serif;
+  font-family: 'Kayak', sans-serif;
   color: #fc6f9e;
+}
+
+::ng-deep .mat-focused .mat-form-field-placeholder {
+  font-family: 'Kayak', sans-serif;
+}
+
+::ng-deep .mat-form-field-placeholder {
+  font-family: 'Kayak', sans-serif;
 }
 
 .thanksLabel {
   display: flex;
   justify-content: center;
   color: #7435b2;
-  font-family: 'Kayak Sans', sans-serif;
+  font-family: 'Kayak', sans-serif;
   font-size: 18px;
   font-weight: bold;
   text-transform: initial;
@@ -69,7 +78,7 @@ input {
   display: flex;
   justify-content: center;
   color: #e54b4b;
-  font-family: 'Kayak Sans', sans-serif;
+  font-family: 'Kayak', sans-serif;
   font-size: 18px;
   font-weight: bold;
   text-transform: initial;
