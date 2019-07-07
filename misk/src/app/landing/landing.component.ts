@@ -10,18 +10,18 @@ import { FirebaseService } from '../services/firebase.service';
     trigger('fadeInOut', [
       transition(':enter', [
         style({ opacity: 0 }),
-        animate(500, style({ opacity: 1 }))
+        animate(100, style({ opacity: 1 }))
       ]),
-      transition(':leave', [animate(500, style({ opacity: 0 }))])
+      transition(':leave', [animate(100, style({ opacity: 0 }))])
     ]),
     trigger('slideUp', [
       transition(':enter', [
         style({ transform: 'translateY(100%)', opacity: 0 }),
-        animate('200ms', style({ transform: 'translateY(0)', opacity: 1 }))
+        animate('1s', style({ transform: 'translateY(0)', opacity: 1 }))
       ]),
       transition(':leave', [
         style({ transform: 'translateX(0)', opacity: 1 }),
-        animate('200ms', style({ transform: 'translateY(100%)', opacity: 0 }))
+        animate('1s', style({ transform: 'translateY(100%)', opacity: 0 }))
       ])
     ])
   ]
