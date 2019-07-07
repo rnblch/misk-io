@@ -1,0 +1,40 @@
+.main-content {
+  background-color: #fffbfa;
+  height: 100%;
+}
+
+.logo {
+  height: 30%;
+  width: 30%;
+  padding: 3%;
+  margin-top: -5%;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin-left: 30px;
+  background-color: #7435b2;
+  color: white;
+  max-height: 45px;
+}
+
+.label {
+  color: #fc6f9e;
+  font-family: 'Kayak Sans', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.label:hover {
+  cursor: pointer;
+  transform: translate(2px, -2px);
+  transition: 150ms ease-out;
+}
+
+.label:active {
+  transform: translate(205px, 50px) rotate(-90deg);
+}

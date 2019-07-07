@@ -1,0 +1,12 @@
+<div class="main-content" fxLayout="column" fxLayoutAlign="center center">
+  <img class="logo" src="../../assets/misk-logo.svg" />
+  <label class="label">Wanna know more?</label>
+  <form *ngIf="userInterested">
+    <div fxLayout="row">
+      <mat-form-field class="email">
+        <input matInput placeholder="Email" [formControl]="email" />
+      </mat-form-field>
+      <button class="button" mat-raised-button>Submit</button>
+    </div>
+  </form>
+</div>
