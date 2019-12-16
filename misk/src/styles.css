@@ -1,4 +1,4 @@
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 html,
 body {
@@ -6,4 +6,8 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.clickable {
+  cursor: pointer;
 }

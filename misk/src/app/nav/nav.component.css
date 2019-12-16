@@ -1,0 +1,7 @@
+.nav-group {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  background-color: #fceeea;
+  z-index: 100;
+}
