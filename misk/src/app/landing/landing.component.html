@@ -1,4 +1,12 @@
-<video playsinline autoPlay autoplay muted loop id="misk-animation">
+<video
+  playsinline
+  autoplay
+  muted
+  loop
+  id="misk-animation"
+  oncanplay="this.play()"
+  onloadedmetadata="this.muted = true"
+>
   <source src="../../assets/misk-background.mp4" type="video/mp4" />
 </video>
 <div class="main-content" fxLayout="column" fxLayoutAlign="center center">
