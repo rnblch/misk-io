@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { FirebaseService } from '../services/firebase.service';
 
@@ -26,7 +26,7 @@ import { FirebaseService } from '../services/firebase.service';
     ])
   ]
 })
-export class LandingComponent implements OnInit {
+export class LandingComponent implements OnInit, AfterViewInit {
   labelClicked: boolean;
   thanksLabel: boolean;
   email: string;
@@ -35,6 +35,13 @@ export class LandingComponent implements OnInit {
   constructor(private firebaseService: FirebaseService) {}
 
   ngOnInit() {}
+
+  ngAfterViewInit() {
+    const videoPlayer = <HTMLVideoElement>(
+      document.getElementById('misk-animation')
+    );
+    videoPlayer.play();
+  }
 
   toggle() {
     this.labelClicked = !this.labelClicked;
