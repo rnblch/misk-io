@@ -2,7 +2,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  color: #fff;
+  color: #3a3133;
   background-color: transparent;
   margin-bottom: 0;
   box-shadow: none;
@@ -31,7 +31,7 @@
 .nav-link {
   font-family: 'DM Sans', sans-serif;
   position: relative;
-  color: #3a3133 !important;
+  color: #3a3133;
   padding: 0.5rem 0;
   font-size: 1.25rem;
   font-weight: 700;
@@ -45,7 +45,7 @@ a {
 }
 
 .nav-logo-mobile {
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
 }
 
 .nav-logo-desktop {

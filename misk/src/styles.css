@@ -6,13 +6,12 @@
 html,
 body {
   height: 100%;
-  width: 100%;
   margin: 0;
-  padding: 0;
 }
 
 body {
   background-color: #3a3133;
+  display: block;
 }
 
 .resizer[data-v-b329ee4c],
@@ -132,10 +131,6 @@ textarea {
     display: block;
   }
 
-  .navbar:not(.nav-scrolled) .nav-link {
-    color: white;
-  }
-
   .nav-logo-hidden,
   .nav-logo-mobile,
   .nav-logo-desktop {
@@ -144,5 +139,21 @@ textarea {
 
   .navbar-mobile {
     display: none;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .h2 {
+    font-size: 2.5rem;
+  }
+
+  .logo {
+    max-width: 20.75rem;
+  }
+
+  .subtitle {
+    font-size: 3rem;
   }
 }
