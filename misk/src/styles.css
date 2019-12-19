@@ -3,10 +3,17 @@
   -webkit-font-smoothing: antialiased;
 }
 
+html {
+  line-height: 1.4;
+}
+
 html,
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
+  padding: 0;
+  background-color: transparent;
 }
 
 body {
@@ -102,7 +109,6 @@ textarea {
   }
 
   .footer-aside {
-    padding: 0;
     border: none !important;
     font-size: 1rem;
     -webkit-box-ordinal-group: 0;

@@ -22,37 +22,6 @@
             the first swipe-to-marry app in arabic.
           </h2>
         </h1>
-        <label
-          class="label"
-          [ngClass]="labelClicked ? 'labelClicked' : 'label'"
-          (click)="toggle()"
-        >
-          become a beta user</label
-        >
-        <form *ngIf="labelClicked" [@fadeInOut]>
-          <div fxLayout="row">
-            <mat-form-field class="email">
-              <input
-                [(ngModel)]="email"
-                matInput
-                type="email"
-                autocomplete="email"
-                placeholder="Email"
-                name="email"
-                required
-              />
-            </mat-form-field>
-            <button class="button" mat-raised-button (click)="submit()">
-              Submit
-            </button>
-          </div>
-          <label *ngIf="thanksLabel" class="thanksLabel" [@slideUp]
-            >Thanks. We'll be in touch soon.</label
-          >
-          <label *ngIf="errorLabel" class="errorLabel" [@slideUp]
-            >Oops. Something went wrong.</label
-          >
-        </form>
       </div>
     </section>
   </main>

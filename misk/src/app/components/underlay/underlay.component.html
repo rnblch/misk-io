@@ -1,21 +1,34 @@
 <div class="underlay">
-  <section class="coming-soon">
-    <div class="coming-soon-mobile" style="display: none;">
-      <a
-        target="_blank"
-        rel="noopener nofollow"
-        href=""
-        class="coming-soon-link"
-        ><img src="../../assets/appstore.png" alt="Coming soon to the App Store"
-      /></a>
-      <a
-        target="_blank"
-        rel="noopener nofollow"
-        href=""
-        class="coming-soon-link"
-        ><img src="../assets/google-play.png" alt="Coming soon to Google Play"
-      /></a>
-    </div>
+  <section>
+    <form class="form">
+      <div
+        class="email-wrapper"
+        fxLayoutAlign="center center"
+        fxLayout="row"
+        fxLayout.xs="column"
+      >
+        <mat-form-field class="email">
+          <input
+            [(ngModel)]="email"
+            matInput
+            type="email"
+            autocomplete="email"
+            placeholder="Email"
+            name="email"
+            required
+          />
+        </mat-form-field>
+        <button class="button" mat-raised-button (click)="submit()">
+          Become a beta user
+        </button>
+      </div>
+      <label *ngIf="thanksLabel" class="thanksLabel" [@slideUp]
+        >Thanks. We'll be in touch soon.</label
+      >
+      <label *ngIf="errorLabel" class="errorLabel" [@slideUp]
+        >Oops. Something went wrong.</label
+      >
+    </form>
   </section>
   <app-footer></app-footer>
   <div tabindex="-1" class="resizer" data-v-b329ee4c="">
