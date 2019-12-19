@@ -11,6 +11,138 @@ body {
   padding: 0;
 }
 
-.clickable {
-  cursor: pointer;
+body {
+  background-color: #3a3133;
+}
+
+.resizer[data-v-b329ee4c],
+.resizer[data-v-b329ee4c] object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: block;
+  overflow: hidden;
+}
+
+.resizer[data-v-b329ee4c] {
+  border: none;
+  background-color: transparent;
+  opacity: 0;
+}
+
+button {
+  -webkit-appearance: button;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.homepage-link {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (min-width: 62em) {
+  .coming-soon-desktop-flex:not(.coming-soon-desktop-hidden) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .coming-soon-desktop-flex:not(.coming-soon-desktop-hidden) .coming-soon-list {
+    display: block;
+    margin-bottom: 1.25rem;
+  }
+
+  .no-margin {
+    margin-top: 0;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    border-top: 1px solid #fceeea;
+    padding-bottom: 5rem;
+  }
+
+  .footer-body {
+    padding-bottom: 0;
+  }
+
+  .footer-link {
+    font-size: 1.25rem;
+  }
+
+  .footer-aside {
+    padding: 0;
+    border: none !important;
+    font-size: 1rem;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+    font-weight: 400;
+  }
+
+  .footer-legal {
+    margin-left: 3rem;
+  }
+
+  .footer-legal li {
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .navbar {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    margin-bottom: 5rem;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-list {
+    display: block;
+  }
+
+  .navbar:not(.nav-scrolled) .nav-link {
+    color: white;
+  }
+
+  .nav-logo-hidden,
+  .nav-logo-mobile,
+  .nav-logo-desktop {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: none;
+  }
 }
