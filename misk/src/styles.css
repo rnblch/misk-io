@@ -143,9 +143,10 @@ textarea {
     margin-bottom: 0px;
     padding-bottom: 25rem;
   }
+}
 
+@media only screen and (min-device-width: 805px) {
   .nav-logo-mobile {
-    padding-left: 1.5rem;
-    margin-left: -0.5rem;
+    margin-left: -1.25rem;
   }
 }
