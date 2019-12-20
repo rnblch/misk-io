@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: 'story', component: ComingSoonComponent }
 ];
 
 @NgModule({

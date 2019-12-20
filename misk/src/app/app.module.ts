@@ -18,6 +18,7 @@ import { UnderlayComponent } from './components/underlay/underlay.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ContactComponent } from './components/contact/contact.component';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactComponent } from './components/contact/contact.component';
     NavComponent,
     UnderlayComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,
