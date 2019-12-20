@@ -16,27 +16,4 @@
       <a href="/contact" class="nav-link">Contact</a>
     </li>
   </ul>
-  <div class="navbar-mobile">
-    <div tabindex="-1"></div>
-    <div tabindex="-1"></div>
-    <div data-lock="">
-      <div class="navbar-mobile-menu">
-        <div class="container">
-          <mat-menu #appMenu="matMenu">
-            <button mat-menu-item>Who we are</button>
-            <button mat-menu-item>Contact</button>
-          </mat-menu>
-
-          <button
-            class="navbar-mobile-toggle"
-            mat-icon-button
-            [matMenuTriggerFor]="appMenu"
-          >
-            <mat-icon class="navbar-mobile-icon">more_vert</mat-icon>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div tabindex="-1"></div>
-  </div>
 </mat-toolbar>

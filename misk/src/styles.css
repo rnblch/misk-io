@@ -157,12 +157,15 @@ textarea {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  .scroll-overlay {
-    width: 109vw;
-  }
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 320px) {
   .nav-item {
-    margin-left: 2rem !important;
+    margin-left: 1rem !important;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .scroll-overlay {
+    margin-bottom: 0px;
+    padding-bottom: 25rem;
   }
 }
