@@ -12,6 +12,7 @@
   padding: 1.25rem 3%;
   z-index: 2;
   min-height: 5rem;
+  padding: 1.5rem;
 }
 
 .nav-list {
@@ -45,7 +46,9 @@ a {
 }
 
 .nav-logo-mobile {
-  margin-top: 0.25rem;
+  margin-top: 0.15rem;
+  padding-left: 0.5rem;
+  margin-left: -0.5rem;
 }
 
 .navbar-mobile-toggle {
