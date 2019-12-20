@@ -16,6 +16,8 @@ import { NavComponent } from './components/nav/nav.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { UnderlayComponent } from './components/underlay/underlay.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ReactiveFormsModule,
     MatButtonModule,
     MatToolbarModule,
+    MatMenuModule,
+    MatIconModule,
     HttpClientModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase),

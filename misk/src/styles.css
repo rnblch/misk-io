@@ -1,4 +1,6 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'destyle.css';
+
 * {
   -webkit-font-smoothing: antialiased;
 }
@@ -12,7 +14,6 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0;
   background-color: transparent;
 }
 
@@ -75,18 +76,6 @@ textarea {
 }
 
 @media (min-width: 62em) {
-  .coming-soon-desktop-flex:not(.coming-soon-desktop-hidden) {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
-
-  .coming-soon-desktop-flex:not(.coming-soon-desktop-hidden) .coming-soon-list {
-    display: block;
-    margin-bottom: 1.25rem;
-  }
-
   .no-margin {
     margin-top: 0;
   }
@@ -161,5 +150,19 @@ textarea {
 
   .subtitle {
     font-size: 3rem;
+  }
+
+  .main-content {
+    margin-bottom: 20rem;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .scroll-overlay {
+    width: 109vw;
+  }
+
+  .nav-item {
+    margin-left: 2rem !important;
   }
 }

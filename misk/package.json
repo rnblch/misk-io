@@ -26,6 +26,7 @@
     "@angular/router": "~8.2.13",
     "angular": "^1.7.9",
     "core-js": "^3.3.5",
+    "destyle.css": "^1.0.11",
     "firebase": "7.2.2",
     "firebase-tools": "^7.10.0",
     "rxjs": "~6.5.3",

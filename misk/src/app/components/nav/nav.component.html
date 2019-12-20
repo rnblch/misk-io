@@ -22,50 +22,18 @@
     <div data-lock="">
       <div class="navbar-mobile-menu">
         <div class="container">
-          <ul class="navbar-mobile-socials">
-            <li class="navbar-mobile-social">
-              <a
-                href="https://twitter.com/miskappofficial"
-                rel="noopener nofollow"
-                target="_blank"
-                class="navbar-mobile-social-link"
-                ><img
-                  src="../assets/twitter-icon.svg"
-                  alt=""
-                  class="navbar-mobile-social-icon"
-                />
-                <span class="homepage-link">Twitter</span></a
-              >
-            </li>
-            <li class="navbar-mobile-social">
-              <a
-                href="https://www.instagram.com/miskappofficial"
-                rel="noopener nofollow"
-                target="_blank"
-                class="navbar-mobile-social-link"
-                ><img
-                  src="../assets/instagram-icon.svg"
-                  alt=""
-                  class="navbar-mobile-social-icon"
-                />
-                <span class="homepage-link">Instagram</span></a
-              >
-            </li>
-            <li class="navbar-mobile-social">
-              <a
-                href="https://www.facebook.com/miskappofficial"
-                rel="noopener nofollow"
-                target="_blank"
-                class="navbar-mobile-social-link"
-                ><img
-                  src="../assets/facebook-icon.svg"
-                  alt=""
-                  class="navbar-mobile-social-icon"
-                />
-                <span class="homepage-link">Facebook</span></a
-              >
-            </li>
-          </ul>
+          <mat-menu #appMenu="matMenu">
+            <button mat-menu-item>Who we are</button>
+            <button mat-menu-item>Contact</button>
+          </mat-menu>
+
+          <button
+            class="navbar-mobile-toggle"
+            mat-icon-button
+            [matMenuTriggerFor]="appMenu"
+          >
+            <mat-icon class="navbar-mobile-icon">more_vert</mat-icon>
+          </button>
         </div>
       </div>
     </div>
