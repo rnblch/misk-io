@@ -7,7 +7,10 @@ import { ComingSoonComponent } from './components/coming-soon/coming-soon.compon
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'story', component: ComingSoonComponent }
+  { path: 'story', component: ComingSoonComponent },
+  { path: 'security', component: ComingSoonComponent },
+  { path: 'privacy', component: ComingSoonComponent },
+  { path: 'terms', component: ComingSoonComponent }
 ];
 
 @NgModule({
