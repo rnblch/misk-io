@@ -1,0 +1,15 @@
+.link-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.email-link {
+  align-self: center;
+  font-family: 'DM Sans', sans-serif;
+  color: #fceeea;
+  font-weight: 700;
+  font-size: 42px;
+}

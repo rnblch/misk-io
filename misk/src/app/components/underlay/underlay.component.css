@@ -84,6 +84,7 @@ input:-webkit-autofill:active {
   font-weight: bold;
   text-transform: initial;
   text-shadow: -3px 2px 2px rgba(206, 89, 55, 0);
+  text-align: center;
 }
 
 .errorLabel {
@@ -95,4 +96,5 @@ input:-webkit-autofill:active {
   font-weight: bold;
   text-transform: initial;
   text-shadow: -3px 2px 2px rgba(206, 89, 55, 0);
+  text-align: center;
 }

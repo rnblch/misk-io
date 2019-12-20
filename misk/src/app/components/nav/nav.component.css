@@ -3,7 +3,7 @@
   left: 0;
   right: 0;
   color: #3a3133;
-  background-color: transparent;
+  background-color: #fceeea;
   margin-bottom: 0;
   box-shadow: none;
   display: flex;
@@ -45,11 +45,9 @@ a {
 }
 
 .nav-logo-mobile {
-  margin-left: 0.2rem;
-}
-
-.nav-logo-desktop {
-  display: none;
+  margin-top: -0.5rem;
+  margin-left: -1.25rem;
+  padding-left: 0.5rem;
 }
 
 .navbar-mobile-toggle {

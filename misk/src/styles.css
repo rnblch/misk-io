@@ -22,25 +22,6 @@ body {
   display: block;
 }
 
-.resizer[data-v-b329ee4c],
-.resizer[data-v-b329ee4c] object {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  display: block;
-  overflow: hidden;
-}
-
-.resizer[data-v-b329ee4c] {
-  border: none;
-  background-color: transparent;
-  opacity: 0;
-}
-
 button {
   -webkit-appearance: button;
 }
@@ -124,12 +105,6 @@ textarea {
 
   .nav-list {
     display: block;
-  }
-
-  .nav-logo-hidden,
-  .nav-logo-mobile,
-  .nav-logo-desktop {
-    display: none;
   }
 
   .navbar-mobile {

@@ -17,6 +17,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { UnderlayComponent } from './components/underlay/underlay.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MatIconModule } from '@angular/material/icon';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MatIconModule } from '@angular/material/icon';
     LandingComponent,
     NavComponent,
     UnderlayComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
