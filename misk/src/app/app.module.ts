@@ -20,7 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ContactComponent } from './components/contact/contact.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { WrongRouteComponent } from './components/wrong-route/wrong-route.component';
-import * as firebase from 'firebase/app';
+
 
 @NgModule({
   declarations: [
@@ -51,16 +51,4 @@ import * as firebase from 'firebase/app';
   providers: [],
   bootstrap: [AppComponent]
 })
-const firebaseConfig = {
-  apiKey: 'AIzaSyARXyZP4TO_k5Z-PzrqpVC8Z-dUiuLldkI',
-  authDomain: 'misk-web.firebaseapp.com',
-  databaseURL: 'https://misk-web.firebaseio.com',
-  projectId: 'misk-web',
-  storageBucket: 'misk-web.appspot.com',
-  messagingSenderId: '26713949450',
-  appId: '1:26713949450:web:788f6ccb30f14e53',
-  measurementId: 'G-LBVFVVCD16'
-};
-
-firebase.initializeApp(firebaseConfig);
 export class AppModule {}
