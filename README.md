@@ -5,4 +5,5 @@ A website for my upcoming mobile application, the first swipe-to-marry app in Ar
 # To run
 
 1. clone
-2. run `ng serve`
+2. add your own environment.prod.ts and environment.ts files
+3. run `ng serve`
