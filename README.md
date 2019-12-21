@@ -1,3 +1,10 @@
-# misk-web
+# Misk
 
-a lil thing i'm makin don't look at it yet
+## Make marriage cool again.
+
+A website for my upcoming mobile application, the first swipe-to-marry app in Arabic.
+
+# To run
+
+1. clone
+2. run `ng serve`
