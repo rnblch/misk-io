@@ -67,7 +67,7 @@ textarea {
 .center-text {
   align-self: center;
   font-family: 'DM Sans', sans-serif;
-  color: #fceeea;
+  color: rgb(255, 234, 229);
   font-weight: 700;
   font-size: 42px;
   text-align: center;
@@ -83,7 +83,7 @@ textarea {
     align-items: center;
     justify-content: space-between;
     margin-top: 5rem;
-    border-top: 1px solid #fceeea;
+    border-top: 1px solid rgb(255, 234, 229);
     padding-bottom: 5rem;
   }
 
@@ -152,12 +152,5 @@ textarea {
 @media only screen and (min-device-width: 320px) and (max-device-width: 320px) {
   .nav-item {
     margin-left: 1rem !important;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  .scroll-overlay {
-    margin-bottom: 0px;
-    padding-bottom: 25rem;
   }
 }

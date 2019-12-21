@@ -29,7 +29,7 @@
 }
 
 .footer-link {
-  color: #fceeea;
+  color: rgb(255, 234, 229);
   text-decoration: none;
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
@@ -37,13 +37,13 @@
 
 .footer-aside {
   font-weight: 400;
-  border-top: 2px solid #fceeea;
+  border-top: 2px solid rgb(255, 234, 229);
 }
 
 .copyright {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
-  color: #fceeea;
+  color: rgb(255, 234, 229);
   font-size: 1rem;
 }
 

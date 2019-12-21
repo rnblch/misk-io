@@ -18,11 +18,12 @@
 .email-wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 2rem;
 }
 
 .button {
   font-family: 'DM Sans', sans-serif;
-  background-color: #fceeea;
+  background-color: rgb(255, 234, 229);
   color: #3a3133;
   max-height: 45px;
   border-radius: 35px;
@@ -40,7 +41,7 @@
 
 input {
   font-family: 'DM Sans', sans-serif;
-  color: #fceeea;
+  color: rgb(255, 234, 229);
 }
 
 .mat-form-field.email {
@@ -48,11 +49,11 @@ input {
 }
 
 ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline {
-  background-color: #fceeea;
+  background-color: rgb(255, 234, 229);
 }
 
 ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-label {
-  color: #fceeea;
+  color: rgb(255, 234, 229);
 }
 
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
@@ -72,13 +73,13 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
-  -webkit-text-fill-color: #fceeea !important;
+  -webkit-text-fill-color: rgb(255, 234, 229) !important;
 }
 
 .thanksLabel {
   display: flex;
   justify-content: center;
-  color: #fceeea;
+  color: rgb(255, 234, 229);
   font-family: 'DM Sans', sans-serif;
   font-size: 18px;
   font-weight: bold;

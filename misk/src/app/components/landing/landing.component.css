@@ -5,7 +5,7 @@
   height: 100vh;
   min-height: 100vh;
   text-align: center;
-  background-color: #fceeea;
+  background-color: rgb(255, 234, 229);
   color: #3a3133;
   overflow: hidden;
 }
