@@ -1,7 +1,5 @@
 # Misk
 
-## Make marriage cool again.
-
 A website for my upcoming mobile application, the first swipe-to-marry app in Arabic.
 
 # To run
