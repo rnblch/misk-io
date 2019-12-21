@@ -14,7 +14,6 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: transparent;
 }
 
 body {
@@ -66,11 +65,78 @@ textarea {
 
 .center-text {
   align-self: center;
-  font-family: 'DM Sans', sans-serif;
-  color: rgb(254, 238, 232);
-  font-weight: 700;
-  font-size: 42px;
+  font-size: 2.625rem;
   text-align: center;
+}
+
+.glow {
+  color: rgb(254, 238, 232);
+}
+
+.background-glow {
+  background-color: rgb(254, 238, 232);
+}
+
+.comfort {
+  color: rgb(128, 0, 184);
+}
+
+.background-comfort {
+  background-color: rgb(128, 0, 184);
+}
+
+.pop {
+  color: rgb(255, 91, 155);
+}
+
+.background-pop {
+  background-color: rgb(255, 91, 155);
+}
+
+.slate {
+  color: rgb(60, 49, 51);
+}
+
+.background-slate {
+  background-color: rgb(60, 49, 51);
+}
+
+.nah {
+  color: #e54b4b;
+}
+
+.background-nah {
+  background-color: #e54b4b;
+}
+
+.dm200 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 200;
+}
+
+.dm300 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}
+
+.dm400 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+}
+
+.dm500 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+}
+
+.dm600 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+}
+
+.dm700 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
 }
 
 @media (min-width: 62em) {

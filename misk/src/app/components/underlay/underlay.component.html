@@ -1,4 +1,4 @@
-<div class="underlay">
+<div class="underlay background-slate">
   <section>
     <form class="form">
       <div
@@ -9,6 +9,7 @@
       >
         <mat-form-field class="email">
           <input
+            class="dm400"
             [(ngModel)]="email"
             matInput
             type="email"
@@ -18,14 +19,18 @@
             required
           />
         </mat-form-field>
-        <button class="button" mat-raised-button (click)="submit()">
+        <button
+          class="button background-glow slate dm700"
+          mat-raised-button
+          (click)="submit()"
+        >
           Become a beta user
         </button>
       </div>
-      <label *ngIf="thanksLabel" class="thanksLabel" [@slideUp]
+      <label *ngIf="thanksLabel" class="thanksLabel glow dm700" [@slideUp]
         >Thanks. We'll be in touch soon.</label
       >
-      <label *ngIf="errorLabel" class="errorLabel" [@slideUp]
+      <label *ngIf="errorLabel" class="errorLabel nah dm700" [@slideUp]
         >Oops. Something went wrong. Please try again.</label
       >
     </form>

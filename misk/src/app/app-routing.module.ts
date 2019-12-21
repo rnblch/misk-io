@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
+import { WrongRouteComponent } from './components/wrong-route/wrong-route.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -10,7 +11,12 @@ const routes: Routes = [
   { path: 'story', component: ComingSoonComponent },
   { path: 'security', component: ComingSoonComponent },
   { path: 'privacy', component: ComingSoonComponent },
-  { path: 'terms', component: ComingSoonComponent }
+  { path: 'terms', component: ComingSoonComponent },
+  {
+    path: '**',
+    pathMatch: 'full',
+    component: WrongRouteComponent
+  }
 ];
 
 @NgModule({

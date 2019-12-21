@@ -13,7 +13,6 @@
   justify-content: space-between;
   align-items: center;
   min-height: 5rem;
-  padding: 1.5rem;
 }
 
 .nav-list {
@@ -31,12 +30,9 @@
 }
 
 .nav-link {
-  font-family: 'DM Sans', sans-serif;
   position: relative;
-  color: #3a3133;
   padding: 0.5rem 0;
   font-size: 1.25rem;
-  font-weight: 700;
   text-decoration: none;
 }
 
@@ -115,5 +111,5 @@ a {
 .navbar-mobile-link {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #000;
+  color: #3a3133;
 }
