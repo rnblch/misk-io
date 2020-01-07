@@ -46,6 +46,13 @@ textarea {
   margin: 0;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 75rem;
+  padding-top: 3rem;
+}
+
 .homepage-link {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
