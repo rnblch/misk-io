@@ -1,0 +1,24 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 75rem;
+  padding-top: 3rem;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.link:hover {
+  color: #55d6be;
+}
+
+@media (min-width: 48em) {
+  h1 {
+    margin-bottom: 4rem;
+  }
+}

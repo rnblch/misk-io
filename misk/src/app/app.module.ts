@@ -20,6 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ContactComponent } from './components/contact/contact.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { WrongRouteComponent } from './components/wrong-route/wrong-route.component';
+import { SecurityComponent } from './components/security/security.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { WrongRouteComponent } from './components/wrong-route/wrong-route.compon
     FooterComponent,
     ContactComponent,
     ComingSoonComponent,
-    WrongRouteComponent
+    WrongRouteComponent,
+    SecurityComponent
   ],
   imports: [
     BrowserModule,
