@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'security', component: SecurityComponent },
   { path: 'privacy', component: ComingSoonComponent },
   { path: 'terms', component: ComingSoonComponent },
+  { path: 'coming-soon', component: ComingSoonComponent },
   {
     path: '**',
     pathMatch: 'full',
