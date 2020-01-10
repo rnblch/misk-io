@@ -1,3 +1,14 @@
+.title-section {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 12.5rem;
+  padding: 0 5%;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .mission {
   padding-top: 3rem;
 }
@@ -19,6 +30,8 @@
 .cta {
   padding-top: 4rem;
   text-align: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .cta p {

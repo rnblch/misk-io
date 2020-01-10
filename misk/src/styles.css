@@ -13,11 +13,17 @@ html,
 body {
   height: 100%;
   width: 100%;
-  margin: 0;
+  margin: 0ps;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #3a3133;
+  display: block;
+}
+
+.main-content {
   display: block;
 }
 
