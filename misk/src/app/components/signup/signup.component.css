@@ -1,5 +1,5 @@
 .form {
-  margin-bottom: 10em;
+  margin-bottom: 7em;
 }
 
 .email {
@@ -10,7 +10,6 @@
 .email-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 5rem;
 }
 
 .button {
