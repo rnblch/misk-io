@@ -21,6 +21,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { WrongRouteComponent } from './components/wrong-route/wrong-route.component';
 import { SecurityComponent } from './components/security/security.component';
+import { MissionComponent } from './components/mission/mission.component';
+import { BackgroundRingsComponent } from './components/background-rings/background-rings.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 
 @NgModule({
@@ -33,7 +36,10 @@ import { SecurityComponent } from './components/security/security.component';
     ContactComponent,
     ComingSoonComponent,
     WrongRouteComponent,
-    SecurityComponent
+    SecurityComponent,
+    MissionComponent,
+    BackgroundRingsComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
