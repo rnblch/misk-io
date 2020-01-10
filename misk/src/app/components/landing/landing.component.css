@@ -29,3 +29,10 @@ h2 {
   font-size: 1.5rem;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
+
+.signup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

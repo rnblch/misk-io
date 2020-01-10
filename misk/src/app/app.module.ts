@@ -14,7 +14,6 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { NavComponent } from './components/nav/nav.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { UnderlayComponent } from './components/underlay/underlay.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ContactComponent } from './components/contact/contact.component';
@@ -25,13 +24,11 @@ import { MissionComponent } from './components/mission/mission.component';
 import { BackgroundRingsComponent } from './components/background-rings/background-rings.component';
 import { SignupComponent } from './components/signup/signup.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     NavComponent,
-    UnderlayComponent,
     FooterComponent,
     ContactComponent,
     ComingSoonComponent,
