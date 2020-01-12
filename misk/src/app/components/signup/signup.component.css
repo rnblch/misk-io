@@ -65,7 +65,7 @@ input:-webkit-autofill:active {
 .thanksLabel {
   display: flex;
   justify-content: center;
-  font-size: 0.5294rem;
+  font-size: 1rem;
   text-transform: initial;
   text-shadow: -3px 2px 2px rgba(206, 89, 55, 0);
   text-align: center;
@@ -74,7 +74,7 @@ input:-webkit-autofill:active {
 .errorLabel {
   display: flex;
   justify-content: center;
-  font-size: 0.5294rem;
+  font-size: 1rem;
   text-transform: initial;
   text-shadow: -3px 2px 2px rgba(206, 89, 55, 0);
   text-align: center;
