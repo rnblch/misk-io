@@ -278,6 +278,11 @@ textarea {
   .subtitle {
     font-size: 3rem;
   }
+
+  .thanksLabel,
+  .errorLabel {
+    padding-top: 1.5rem !important;
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 320px) {
