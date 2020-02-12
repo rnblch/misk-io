@@ -25,6 +25,10 @@
 }
 
 @media (min-width: 48em) {
+  .mission {
+    padding: 12rem;
+  }
+
   .mission p {
     font-size: 2rem;
     width: 90%;
