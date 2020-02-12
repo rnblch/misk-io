@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mission.component.css']
 })
 export class MissionComponent implements OnInit {
-  currentYear = new Date().getFullYear();
+  title = 'who we are';
   constructor() {}
 
   ngOnInit() {}

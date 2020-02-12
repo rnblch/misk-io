@@ -1,34 +1,30 @@
-<form class="form">
-  <div
-    class="email-wrapper"
-    fxLayoutAlign="center center"
-    fxLayout="row"
-    fxLayout.xs="column"
-  >
-    <mat-form-field class="email">
-      <input
-        class="dm400"
-        [(ngModel)]="email"
-        matInput
-        type="email"
-        autocomplete="email"
-        placeholder="Email"
-        name="email"
-        required
-      />
-    </mat-form-field>
-    <button
-      class="button background-glow slate dm700"
-      mat-raised-button
-      (click)="submit()"
+<div class="cta">
+  <form class="form">
+    <p class="glow center-text dm700 section-text-shadow">
+      Get married like it's {{ currentYear }} already.
+    </p>
+    <div class="email-wrapper" fxLayoutAlign="center center" fxLayout="row" fxLayout.xs="column">
+      <mat-form-field class="email">
+        <input
+          class="dm400"
+          [(ngModel)]="email"
+          matInput
+          type="email"
+          autocomplete="email"
+          placeholder="Email"
+          name="email"
+          required
+        />
+      </mat-form-field>
+      <button class="button background-glow slate dm700" mat-raised-button (click)="submit()">
+        Become a beta user
+      </button>
+    </div>
+    <label *ngIf="thanksLabel" class="thanksLabel glow dm700" [@slideUp]
+      >Thanks. We'll be in touch soon.</label
     >
-      Become a beta user
-    </button>
-  </div>
-  <label *ngIf="thanksLabel" class="thanksLabel glow dm700" [@slideUp]
-    >Thanks. We'll be in touch soon.</label
-  >
-  <label *ngIf="errorLabel" class="errorLabel nah dm700" [@slideUp]
-    >Oops. Something went wrong. Please try again.</label
-  >
-</form>
+    <label *ngIf="errorLabel" class="errorLabel nah dm700" [@slideUp]
+      >Oops. Something went wrong. Please try again.</label
+    >
+  </form>
+</div>

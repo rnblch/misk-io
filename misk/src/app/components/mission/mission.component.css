@@ -26,23 +26,6 @@
   text-align: center;
 }
 
-.cta {
-  padding: 4rem;
-  text-align: center;
-}
-
-.cta p {
-  padding-bottom: 4rem;
-  margin: 0 auto;
-  max-width: 37.5rem;
-  line-height: 1.18;
-  font-size: 1.85rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
 @media (min-width: 48em) {
   .mission p {
     font-size: 2rem;

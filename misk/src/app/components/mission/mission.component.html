@@ -1,14 +1,5 @@
 <main class="main-content">
-  <section class="home background-glow slate title-section">
-    <app-background-rings></app-background-rings>
-    <div class="overlay-content wrapper">
-      <h1 class="center-content dm700">
-        <h2 class="slate section">
-          what we believe
-        </h2>
-      </h1>
-    </div>
-  </section>
+  <app-section-title [title]="title"></app-section-title>
   <div
     class="center-text-wrapper glow dm600 mission section-text-shadow"
     fxLayoutAlign="center center"
@@ -34,14 +25,9 @@
       Oh, and it’s in conversational Arabic, the kind everyone can understand.
     </p>
 
-    <a class="center-text glow" href="/coming-soon">
+    <a class="center-text glow" href="/how">
       <h3 class="highlight-link mission-link dm600 section-text-shadow">learn more</h3></a
     >
   </div>
-  <div class="cta">
-    <p class="glow center-text dm700 section-text-shadow">
-      Get married like it's {{ currentYear }} already.
-    </p>
-    <app-signup></app-signup>
-  </div>
+  <app-signup></app-signup>
 </main>

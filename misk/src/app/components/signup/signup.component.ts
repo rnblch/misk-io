@@ -1,5 +1,6 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
-import { trigger, transition, style, animate } from '@angular/animations';
+
 import { FirebaseService } from '../../services/firebase.service';
 
 @Component({
@@ -20,6 +21,7 @@ import { FirebaseService } from '../../services/firebase.service';
   ]
 })
 export class SignupComponent implements OnInit {
+  currentYear = new Date().getFullYear();
   labelClicked: boolean;
   thanksLabel: boolean;
   email: string;
