@@ -26,6 +26,8 @@ import { NavComponent } from './components/nav/nav.component';
 import { SecurityComponent } from './components/security/security.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { WrongRouteComponent } from './components/wrong-route/wrong-route.component';
+import { MissionDetailsComponent } from './components/mission-details/mission-details.component';
+import { SectionTitleComponent } from './components/section-title/section-title.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { WrongRouteComponent } from './components/wrong-route/wrong-route.compon
     SecurityComponent,
     MissionComponent,
     BackgroundRingsComponent,
-    SignupComponent
+    SignupComponent,
+    MissionDetailsComponent,
+    SectionTitleComponent
   ],
   imports: [
     BrowserModule,

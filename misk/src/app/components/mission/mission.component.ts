@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MissionComponent implements OnInit {
   currentYear = new Date().getFullYear();
+  title = 'who we are';
   constructor() {}
 
   ngOnInit() {}

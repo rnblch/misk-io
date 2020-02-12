@@ -1,0 +1,16 @@
+.mission-list {
+  padding: 3rem;
+}
+
+.mission-list p {
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+h1,
+.mission-list p {
+  max-width: 60rem;
+  margin: 2rem auto;
+  line-height: 1.18;
+  text-align: center;
+}
