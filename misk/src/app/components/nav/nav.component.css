@@ -1,6 +1,5 @@
 .navbar {
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
   z-index: 1000;
   top: 0;
   left: 0;
@@ -8,12 +7,11 @@
   color: #3a3133;
   background-color: rgb(254, 238, 232);
   margin-bottom: 0;
-  box-shadow: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 5rem;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 
 .nav-list {
@@ -23,11 +21,11 @@
 
 .nav-item {
   display: inline-block;
-  margin-left: 3rem;
+  margin: 2rem;
 }
 
 .nav-link:hover {
-  color: #7336b2 !important;
+  color: #55d6be !important;
 }
 
 .nav-link {
@@ -43,74 +41,66 @@ a {
   background-color: transparent;
 }
 
-.nav-logo-mobile {
-  margin-top: 0.15rem;
-  padding-left: 0.5rem;
-  margin-left: -0.5rem;
+.sidenav {
+  width: 60vw;
+  padding-top: 4rem;
+}
+
+.sidenav mat-nav-list {
+  height: 100%;
+}
+
+.sidenav-item {
+  padding: 1rem;
+}
+
+.mat-drawer-container {
+  position: static;
+}
+
+.sidenav-container {
+  overflow-y: auto;
+  height: 100%;
 }
 
 .navbar-mobile-toggle {
-  background-color: transparent;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0.5rem;
-  color: #3a3133;
+  margin: 2rem;
+  margin-right: 1.75rem;
+}
+
+.navbar-mobile-icon:active {
+  color: #55d6be;
 }
 
 .navbar-mobile-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  width: 1.625rem;
-  height: 1.3125rem;
-  padding: 0;
-  pointer-events: none;
-}
-
-.navbar-mobile-icon-line {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: currentColor;
-  transition: background-color 0.3s ease, opacity 0.3s ease,
-    -webkit-transform 0.3s ease;
-  transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-  transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease,
-    -webkit-transform 0.3s ease;
-}
-
-.navbar-mobile-menu {
-  position: absolute;
-  width: 100%;
-  padding: 0 2rem;
-  top: 5rem;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  background-color: #fff;
-  height: calc(100vh - 5rem);
-  overflow: auto;
-  z-index: 100;
-}
-
-.navbar-mobile-list {
-  margin: 3.75rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.navbar-mobile-item {
-  margin-bottom: 1.25rem;
-  line-height: 1;
+  font-size: 3rem;
 }
 
 .navbar-mobile-link {
-  font-size: 2.5rem;
+  color: #55d6be;
   font-weight: 700;
-  color: #3a3133;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease, opacity 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+#fb-mobile-icon {
+  margin-top: -0.2rem;
+}
+
+.navbar-mobile-socials {
+  padding-top: 60vh;
+  margin: auto;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.navbar-social-item {
+  vertical-align: middle;
+}
+
+.navbar-social-icon {
+  padding: 0.5rem;
+  vertical-align: middle;
 }

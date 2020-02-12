@@ -36,3 +36,7 @@ h2 {
   left: 0;
   right: 0;
 }
+
+::ng-deep app-signup .form {
+  padding-top: 5rem;
+}

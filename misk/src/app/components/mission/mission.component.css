@@ -10,28 +10,25 @@
 }
 
 .mission {
-  padding-top: 3rem;
+  padding: 3rem;
+}
+
+.mission-link {
+  font-size: 1rem;
 }
 
 .mission p {
-  font-size: 2rem;
-  width: 90%;
+  font-size: 1.5rem;
+  width: 80%;
   max-width: 60rem;
   margin: 2rem auto;
   line-height: 1.18;
   text-align: center;
 }
 
-.highlight-link {
-  display: block;
-  font-size: 1.5rem;
-}
-
 .cta {
-  padding-top: 4rem;
+  padding: 4rem;
   text-align: center;
-  margin-right: 1rem;
-  margin-left: 1rem;
 }
 
 .cta p {
@@ -39,10 +36,29 @@
   margin: 0 auto;
   max-width: 37.5rem;
   line-height: 1.18;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.85rem;
 }
 
 h2 {
   font-size: 3rem;
+}
+
+@media (min-width: 48em) {
+  .mission p {
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  .mission-link {
+    font-size: 1.5rem;
+  }
+
+  .cta {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  .cta p {
+    font-size: 2rem;
+  }
 }

@@ -1,19 +1,77 @@
-<mat-toolbar class="navbar">
-  <a href="/"
-    ><img
-      class="nav-logo-mobile"
-      width="46"
-      height="46"
-      src="../../assets/mobile-logo.svg"
-    />
-    <span class="homepage-link">Misk Home</span></a
-  >
-  <ul title="Main Menu" class="nav-list">
-    <li class="nav-item">
-      <a href="/story" class="nav-link slate dm700">Who we are</a>
-    </li>
-    <li class="nav-item">
-      <a href="/contact" class="nav-link slate dm700">Contact</a>
-    </li>
-  </ul>
-</mat-toolbar>
+<div>
+  <mat-toolbar class="navbar">
+    <a href="/"
+      ><img class="nav-logo-mobile" width="46" height="46" src="../../assets/mobile-logo.svg" />
+      <span class="homepage-link">Misk Home</span></a
+    >
+    <ul title="Main Menu" class="nav-list" fxShow="true" fxHide.lt-md>
+      <li class="nav-item">
+        <a href="/story" class="nav-link slate dm700">Who we are</a>
+      </li>
+      <li class="nav-item">
+        <a href="/contact" class="nav-link slate dm700">Contact</a>
+      </li>
+    </ul>
+    <button
+      mat-icon-button
+      class="navbar-mobile-toggle"
+      (click)="sidenav.toggle()"
+      fxShow="true"
+      fxHide.gt-sm
+      aria-label="Side nav toggle icon"
+    >
+      <mat-icon class="navbar-mobile-icon slate">menu</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill class="sidenav-container">
+    <mat-sidenav class="sidenav background-glow" position="end" #sidenav>
+      <mat-nav-list fxLayout="column">
+        <ul title="Main Menu">
+          <li class="sidenav-item slate">
+            <a [routerLink]="['/story']" (click)="sidenav.close()" class="nav-link dm700"
+              >Who we are</a
+            >
+          </li>
+          <li class="sidenav-item slate">
+            <a [routerLink]="['/contact']" (click)="sidenav.close()" class="nav-link dm700"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <ul fxLayout="row" class="navbar-mobile-socials" fxLayoutAlign="space-evenly">
+          <li class="navbar-social-item">
+            <a
+              href="https://twitter.com/miskappofficial"
+              class="navbar-mobile-link"
+              rel="noopener nofollow"
+              target="_blank"
+              ><img src="../../assets/twitter-nav-mobile.svg" class="navbar-social-icon" />
+              <span class="homepage-link">Twitter</span></a
+            >
+          </li>
+          <li class="navbar-social-item">
+            <a
+              href="https://www.instagram.com/miskappofficial"
+              rel="noopener nofollow"
+              target="_blank"
+              class="navbar-mobile-link"
+              ><img src="../../assets/instagram-nav-mobile.svg" class="navbar-social-icon" />
+              <span class="homepage-link">Instagram</span></a
+            >
+          </li>
+          <li class="navbar-social-item" id="fb-mobile-icon">
+            <a
+              href="https://www.facebook.com/miskappofficial"
+              rel="noopener nofollow"
+              target="_blank"
+              class="navbar-mobile-link"
+              ><img src="../../assets/facebook-nav-mobile.svg" class="navbar-social-icon" />
+              <span class="homepage-link">Facebook</span></a
+            >
+          </li>
+        </ul>
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+</div>
