@@ -1,0 +1,107 @@
+{
+  "landing": {
+    "tagline": "the first swipe-to-marry app in arabic."
+  },
+
+  "signup": {
+    "cta": "Get married like it's 2020 already.",
+    "button": "Become a beta user"
+  },
+
+  "email": {
+    "placeholder": "Email"
+  },
+
+  "nav": {
+    "story": "Who we are",
+    "contact": "Contact",
+    "ar-link": "ar",
+    "en-link": "en"
+  },
+
+  "footer": {
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "security": "Security"
+  },
+
+  "mission": {
+    "year": "It's 2020.",
+    "firstParagraphA": "Your mother has just sent you photos of yet another doctor, engineer or sheikh who's interested in marrying you.",
+    "firstParagraphB": "You're not interested. You might never be.",
+    "hook": "Misk is on a mission to change that.",
+    "secondParagraph": "Today, many of the apps out there for finding a life partner focus on religion. Misk understands how important it is to your life, but we also know other factors are equally important to your modern sensibilities.",
+    "thirdParagraphA": "Misk focuses on",
+    "thirdParagraphB": "shared priorities,",
+    "thirdParagraphC": "so there’s room for people of all religions. We know you want choices, and we know you’re more than just your religion. ",
+    "conclusion": "Oh, and it’s in conversational Arabic, the kind everyone can understand.",
+    "learnMore": "learn more"
+  },
+  "learn-more": {
+    "one": {
+      "num": "1",
+      "title": "Verified Profiles",
+      "desc": "We like real people. We encourage all users to submit their name, education, profession, income and photos. We verify all this information to make sure you're building an honest relationship."
+    },
+    "two": {
+      "num": "2",
+      "title": "Premium Filters",
+      "desc": "We let you filter by religion, profession, family plans, income and everything in between. Since it's verified information, you can rest assured you're getting exactly what you're looking for."
+    },
+    "three": {
+      "num": "3",
+      "title": "Priorities",
+      "desc": "Whether it's religion or family plans, we know a person is more than just a bunch of categories. That’s why we're the first app that allows you to input how important each category is to you, so you can find someone with similar priorities."
+    },
+    "four": {
+      "num": "4",
+      "title": "Hide Your Name",
+      "desc": "We know you might not be comfortable sharing your personal information with everyone. That's why we give you the option to hide personal information like your age and last name."
+    },
+    "five": {
+      "num": "5",
+      "title": "Woman's Choice",
+      "desc": "We don't think harassment is very modern. For heterosexual users, when you get a match, it's up to the woman to start the conversation or give the man permission to make the first move."
+    },
+    "six": {
+      "num": "6",
+      "title": "Zodiac Compatibility",
+      "desc": "We think astrology is fun. You tell us your birthday, and we tell you if the stars align with everyone you meet."
+    },
+    "seven": {
+      "num": "7",
+      "title": "Likeable Content",
+      "desc": " We don't want you waiting for a match to know if someone's interested. You can like their content too, and we'll send them a notification that gives them the chance to talk to you."
+    },
+    "eight": {
+      "num": "8",
+      "title": "Conversational Arabic",
+      "desc": "We think it's about time apps talked like people did. We use the kind of Arabic normal people speak every day, so you can feel at home."
+    },
+    "nine": {
+      "num": "9",
+      "title": "Baby Pictures",
+      "desc": "We think love is better when it's fun. That's why we let you generate a realistic baby photo based on a photo of you and your match at the touch of a finger."
+    },
+    "ten": {
+      "num": "10",
+      "title": "Who Liked You",
+      "desc": "We let you know if someone likes you even before you've seen their profile. Because that's what your mother does."
+    },
+    "eleven": {
+      "num": "11",
+      "title": "Secret Matches",
+      "desc": "We haven't forgetten about your mother. She loves to play matchmaker as much as we do. So we let family members anonymously insert profiles they like into your stack. But as always, the choice is yours."
+    }
+  },
+  "contact": {
+    "tagline": "we love it when you talk to us"
+  },
+  "coming-soon": {
+    "text": "we're still working on this page, please come back later"
+  },
+  "404": {
+    "number": "404",
+    "notFound": "page not found"
+  }
+}

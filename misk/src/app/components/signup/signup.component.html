@@ -1,30 +1,37 @@
 <div class="cta">
   <form class="form">
-    <p class="glow center-text dm700 section-text-shadow">
-      Get married like it's {{ currentYear }} already.
+    <p
+      class="glow center-text section-text-shadow"
+      [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    >
+      {{ 'signup.cta' | translate }}
     </p>
-    <div class="email-wrapper" fxLayoutAlign="center center" fxLayout="row" fxLayout.xs="column">
-      <mat-form-field class="email">
+    <div
+      class="email-wrapper"
+      fxLayoutAlign="center center"
+      fxLayout="{{ translate.currentLang === 'en' ? 'row' : 'row-reverse' }}"
+      fxLayout.xs="column"
+    >
+      <mat-form-field class="email" [ngClass]="translate.currentLang === 'ar' ? 'ar-input' : ''">
         <input
-          class="dm400"
+          [ngClass]="translate.currentLang === 'en' ? 'dm400' : 'ar400'"
           [(ngModel)]="email"
           matInput
           type="email"
           autocomplete="email"
-          placeholder="Email"
+          placeholder="{{ 'email.placeholder' | translate }}"
           name="email"
           required
         />
       </mat-form-field>
-      <button class="button background-glow slate dm700" mat-raised-button (click)="submit()">
-        Become a beta user
+      <button
+        class="button background-glow slate"
+        [ngClass]="translate.currentLang === 'en' ? 'dm400' : 'ar700'"
+        mat-raised-button
+        (click)="submit()"
+      >
+        {{ 'signup.button' | translate }}
       </button>
     </div>
-    <label *ngIf="thanksLabel" class="thanksLabel glow dm700" [@slideUp]
-      >Thanks. We'll be in touch soon.</label
-    >
-    <label *ngIf="errorLabel" class="errorLabel nah dm700" [@slideUp]
-      >Oops. Something went wrong. Please try again.</label
-    >
   </form>
 </div>

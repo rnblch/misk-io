@@ -1,10 +1,15 @@
 <div
-  class="center-text-wrapper glow dm700"
+  class="center-text-wrapper glow"
+  [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
   fxLayoutAlign="center center"
   fxLayout="column"
 >
-  <h2>we love it when you talk to us</h2>
-  <a class="center-text glow dm700" href="mailto:info@miskme.com">
+  <h2>{{ 'contact.tagline' | translate }}</h2>
+  <a
+    class="center-text glow"
+    [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    href="mailto:info@miskme.com"
+  >
     <h3 class="highlight-link dm500">info@miskme.com</h3></a
   >
 </div>

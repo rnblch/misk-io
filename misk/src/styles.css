@@ -153,6 +153,18 @@ textarea {
   color: #55d6be;
 }
 
+.ar400 {
+  font-family: 'Almarai', sans-serif;
+  font-weight: 400;
+  direction: rtl;
+}
+
+.ar700 {
+  font-family: 'Almarai', sans-serif;
+  font-weight: 700;
+  direction: rtl;
+}
+
 .dm200 {
   font-family: 'DM Sans', sans-serif;
   font-weight: 200;
@@ -160,22 +172,12 @@ textarea {
 
 .dm300 {
   font-family: 'DM Sans', sans-serif;
-  font-weight: 400;
-}
-
-.dm400 {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .dm500 {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
-}
-
-.dm600 {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 600;
 }
 
 .dm700 {
@@ -194,6 +196,22 @@ textarea {
 
 .section-text-shadow {
   text-shadow: -1px 1px 2px rgba(25, 11, 7, 0.68);
+}
+
+.snackbar {
+  background-color: rgb(60, 49, 51);
+  font-weight: 500;
+}
+
+.mat-simple-snackbar {
+  font-family: 'DM Sans', sans-serif;
+  color: rgb(254, 238, 232);
+}
+
+.snackbar button {
+  color: rgb(254, 238, 232);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
 }
 
 @media (min-width: 62em) {

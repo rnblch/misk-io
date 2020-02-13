@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-mission-details',
@@ -6,9 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mission-details.component.css']
 })
 export class MissionDetailsComponent implements OnInit {
-  currentYear = new Date().getFullYear();
   title = `how we're doing it`;
-  constructor() {}
+  constructor(private translate: TranslateService) {}
 
   ngOnInit() {}
 }

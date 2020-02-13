@@ -1,43 +1,44 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { TranslateService } from '@ngx-translate/core';
 
 import { FirebaseService } from '../../services/firebase.service';
 
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.css'],
-  animations: [
-    trigger('slideUp', [
-      transition(':enter', [
-        style({ transform: 'translateY(100%)', opacity: 0 }),
-        animate('1s', style({ transform: 'translateY(0)', opacity: 1 }))
-      ]),
-      transition(':leave', [
-        style({ transform: 'translateX(0)', opacity: 1 }),
-        animate('1s', style({ transform: 'translateY(100%)', opacity: 0 }))
-      ])
-    ])
-  ]
+  styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  currentYear = new Date().getFullYear();
-  labelClicked: boolean;
-  thanksLabel: boolean;
   email: string;
-  errorLabel: boolean;
-  constructor(private firebaseService: FirebaseService) {}
+
+  constructor(
+    private firebaseService: FirebaseService,
+    private snackbar: MatSnackBar,
+    private translate: TranslateService
+  ) {}
 
   ngOnInit() {}
 
   submit() {
     this.firebaseService.submitEmail(this.email).then(res => {
       if (res.id) {
-        this.thanksLabel = true;
-        this.errorLabel = false;
+        this.snackbar.open(`Thanks, we'll be in touch soon.`, 'Ok', {
+          duration: 5000,
+          verticalPosition: 'top',
+          horizontalPosition: 'end',
+          politeness: 'polite',
+          panelClass: 'snackbar'
+        });
       } else {
-        this.thanksLabel = false;
-        this.errorLabel = true;
+        this.snackbar.open(`Uh oh. Something went wrong. Please try again later.`, 'Ok', {
+          duration: 5000,
+          verticalPosition: 'top',
+          horizontalPosition: 'end',
+          politeness: 'polite',
+          panelClass: 'snackbar'
+        });
       }
     });
   }

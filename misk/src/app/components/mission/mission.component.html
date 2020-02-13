@@ -1,32 +1,41 @@
 <main class="main-content">
   <app-section-title [title]="title"></app-section-title>
   <div
-    class="center-text-wrapper glow dm600 mission section-text-shadow"
+    class="center-text-wrapper glow mission section-text-shadow"
+    [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
     fxLayoutAlign="center center"
     fxLayout="column"
   >
-    <p>It’s {{ currentYear }}.</p>
     <p>
-      Your mother has just sent you photos of yet another doctor, engineer or sheikh who's
-      interested in marrying you. You're not interested. You might never be.
+      {{ 'mission.year' | translate }}
+    </p>
+    <p>
+      {{ 'mission.firstParagraphA' | translate }}
+    </p>
+    <p>
+      {{ 'mission.firstParagraphB' | translate }}
     </p>
 
-    <p>Misk is on a mission to change that.</p>
+    <p>{{ 'mission.hook' | translate }}</p>
     <p>
-      Today, many of the apps out there for finding a life partner focus on religion. Misk
-      understands how important it is to your life, but we also know other factors are equally
-      important to your modern sensibilities.
+      {{ 'mission.secondParagraph' | translate }}
     </p>
     <p>
-      Misk focuses on <span class="yeah">shared priorities,</span> so there’s room for people of all
-      religions. We know you want choices, and we know you’re more than just your religion.
+      {{ 'mission.thirdParagraphA' | translate }}
+      <span class="yeah">{{ 'mission.thirdParagraphB' | translate }}</span>
+      {{ 'mission.thirdParagraphC' | translate }}
     </p>
     <p>
-      Oh, and it’s in conversational Arabic, the kind everyone can understand.
+      {{ 'mission.conclusion' | translate }}
     </p>
 
     <a class="center-text glow" href="/how">
-      <h3 class="highlight-link mission-link dm600 section-text-shadow">learn more</h3></a
+      <h3
+        class="highlight-link mission-link section-text-shadow"
+        [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar400'"
+      >
+        {{ 'mission.learnMore' | translate }}
+      </h3></a
     >
   </div>
   <app-signup></app-signup>

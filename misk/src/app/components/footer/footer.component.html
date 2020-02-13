@@ -34,16 +34,34 @@
     </ul>
   </div>
   <div class="footer-aside">
-    <span class="copyright glow dm200">© {{ currentYear }} Miskco Inc.</span>
+    <span class="copyright glow dm300">© {{ currentYear }} Miskco Inc.</span>
     <ul class="footer-list footer-legal">
       <li>
-        <a href="/terms" class="footer-link dm300 footer-link-legal">Terms</a>
+        <a
+          href="/terms"
+          class="footer-link footer-link-legal"
+          [ngClass]="translate.currentLang === 'en' ? 'dm300' : 'ar400'"
+        >
+          {{ 'footer.terms' | translate }}</a
+        >
       </li>
       <li>
-        <a href="/privacy" class="footer-link dm300 footer-link-legal">Privacy</a>
+        <a
+          href="/privacy"
+          class="footer-link footer-link-legal"
+          [ngClass]="translate.currentLang === 'en' ? 'dm300' : 'ar400'"
+        >
+          {{ 'footer.privacy' | translate }}</a
+        >
       </li>
       <li>
-        <a href="/security" class="footer-link dm300 footer-link-legal">Security</a>
+        <a
+          href="/security"
+          class="footer-link footer-link-legal"
+          [ngClass]="translate.currentLang === 'en' ? 'dm300' : 'ar400'"
+        >
+          {{ 'footer.security' | translate }}</a
+        >
       </li>
     </ul>
   </div>

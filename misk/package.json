@@ -23,6 +23,8 @@
     "@angular/platform-browser": "~8.2.13",
     "@angular/platform-browser-dynamic": "~8.2.13",
     "@angular/router": "~8.2.13",
+    "@ngx-translate/core": "^12.1.1",
+    "@ngx-translate/http-loader": "^4.0.0",
     "angular": "^1.7.9",
     "core-js": "^3.3.5",
     "destyle.css": "^1.0.11",

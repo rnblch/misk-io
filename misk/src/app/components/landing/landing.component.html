@@ -3,10 +3,19 @@
     <section class="home background-glow slate">
       <app-background-rings></app-background-rings>
       <div class="overlay-content wrapper">
-        <h1 class="center-content dm600">
-          <img class="logo" src="../../assets/misk-logo.svg" />
-          <h2 class="subtitle slate dm700">
-            the first swipe-to-marry app in arabic.
+        <h1 class="center-content">
+          <img
+            *ngIf="translate.currentLang === 'en'"
+            class="logo"
+            src="../../assets/misk-logo.svg"
+          />
+          <img
+            *ngIf="translate.currentLang === 'ar'"
+            class="logo"
+            src="../../assets/misk-logo-arabic.png"
+          />
+          <h2 class="subtitle slate" [ngClass]="currentLang === 'en' ? 'dm700' : 'ar400'">
+            {{ 'landing.tagline' | translate }}
           </h2>
         </h1>
       </div>

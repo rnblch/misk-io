@@ -1,8 +1,8 @@
 <section class="home background-glow slate title-section">
   <app-background-rings></app-background-rings>
   <div class="overlay-content wrapper">
-    <h1 class="center-content dm700">
-      <h2 class="slate section">
+    <h1 class="center-content">
+      <h2 class="slate section" [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'">
         {{ title }}
       </h2>
     </h1>

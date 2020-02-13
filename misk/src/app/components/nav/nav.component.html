@@ -2,14 +2,38 @@
   <mat-toolbar class="navbar">
     <a href="/"
       ><img class="nav-logo-mobile" width="46" height="46" src="../../assets/mobile-logo.svg" />
-      <span class="homepage-link">Misk Home</span></a
-    >
+    </a>
     <ul title="Main Menu" class="nav-list" fxShow="true" fxHide.lt-md>
       <li class="nav-item">
-        <a href="/story" class="nav-link slate dm700">Who we are</a>
+        <a
+          href="/story"
+          class="nav-link slate"
+          [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+          >{{ 'nav.story' | translate }}</a
+        >
       </li>
       <li class="nav-item">
-        <a href="/contact" class="nav-link slate dm700">Contact</a>
+        <a
+          href="/contact"
+          class="nav-link slate"
+          [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+          >{{ 'nav.contact' | translate }}</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          (click)="changeLanguage('ar')"
+          class="lang-link slate"
+          [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+          >{{ 'nav.ar-link' | translate }}
+        </a>
+        |
+        <a
+          (click)="changeLanguage('en')"
+          class="lang-link slate"
+          [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+          >{{ 'nav.en-link' | translate }}</a
+        >
       </li>
     </ul>
     <button
@@ -29,17 +53,25 @@
       <mat-nav-list fxLayout="column">
         <ul title="Main Menu">
           <li class="sidenav-item slate">
-            <a [routerLink]="['/story']" (click)="sidenav.close()" class="nav-link dm700"
-              >Who we are</a
+            <a
+              [routerLink]="['/story']"
+              (click)="sidenav.close()"
+              class="nav-link"
+              [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+              >{{ 'nav.story' | translate }}</a
             >
           </li>
           <li class="sidenav-item slate">
-            <a [routerLink]="['/contact']" (click)="sidenav.close()" class="nav-link dm700"
-              >Contact</a
+            <a
+              [routerLink]="['/contact']"
+              (click)="sidenav.close()"
+              class="nav-link"
+              [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+              >{{ 'nav.contact' | translate }}</a
             >
           </li>
         </ul>
-        <ul fxLayout="row" class="navbar-mobile-socials" fxLayoutAlign="space-evenly">
+        <ul fxLayout="row" class="navbar-mobile-socials" fxLayoutAlign="space-between">
           <li class="navbar-social-item">
             <a
               href="https://twitter.com/miskappofficial"

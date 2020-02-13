@@ -1,85 +1,136 @@
 <main class="main-content">
   <app-section-title [title]="title"></app-section-title>
   <ol class="mission-list" fxLayout="column">
-    <li class="glow dm700 section-text-shadow">
-      <h1><span class="list-item-number">1</span> Verified Profiles</h1>
+    <li
+      class="glow section-text-shadow"
+      [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    >
+      <h1>
+        <span class="list-item-number">{{ 'learn-more.one.num' | translate }}</span>
+        {{ 'learn-more.one.title' | translate }}
+      </h1>
       <p>
-        We like real people. We encourage all users to submit their name, education, profession,
-        income and photos. We verify all this information to make sure you're building an honest
-        relationship.
+        {{ 'learn-more.one.desc' | translate }}
       </p>
     </li>
-    <li class="glow dm700 section-text-shadow">
-      <h1><span class="list-item-number">2</span> Premium Filters</h1>
+    <li
+      class="glow section-text-shadow"
+      [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    >
+      <h1>
+        <span class="list-item-number">{{ 'learn-more.two.num' | translate }}</span>
+        {{ 'learn-more.two.title' | translate }}
+      </h1>
       <p>
-        We let you filter by religion, profession, family plans, income and everything in between.
-        Since it's verified information, you can rest assured you're getting exactly what you're
-        looking for.
+        {{ 'learn-more.two.desc' | translate }}
       </p>
     </li>
-    <li class="glow dm700 section-text-shadow">
-      <h1><span class="list-item-number">3</span> Priorities</h1>
+    <li
+      class="glow section-text-shadow"
+      [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    >
+      <h1>
+        <span class="list-item-number">{{ 'learn-more.three.num' | translate }}</span>
+        {{ 'learn-more.three.title' | translate }}
+      </h1>
       <p>
-        Whether it's religion or family plans, we know a person is more than just a bunch of
-        categories. That’s why we're the first app that allows you to input how important each
-        category is to you, so you can find someone with similar priorities.
+        {{ 'learn-more.three.desc' | translate }}
       </p>
     </li>
-    <li class="glow dm700 section-text-shadow">
-      <h1><span class="list-item-number">4</span> Hide Your Name</h1>
+    <li
+      class="glow section-text-shadow"
+      [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    >
+      <h1>
+        <span class="list-item-number">{{ 'learn-more.four.num' | translate }}</span>
+        {{ 'learn-more.four.title' | translate }}
+      </h1>
       <p>
-        We know you might not be comfortable sharing your personal information with everyone. That's
-        why we give you the option to hide personal information like your age and last name.
+        {{ 'learn-more.four.desc' | translate }}
       </p>
     </li>
-    <li class="glow dm700 section-text-shadow">
-      <h1><span class="list-item-number">5</span> Woman's Choice</h1>
+    <li
+      class="glow section-text-shadow"
+      [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    >
+      <h1>
+        <span class="list-item-number">{{ 'learn-more.five.num' | translate }}</span>
+        {{ 'learn-more.five.title' | translate }}
+      </h1>
       <p>
-        We don't think harassment is very modern. For heterosexual users, when you get a match, it's
-        up to the woman to start the conversation or give the man permission to make the first move.
+        {{ 'learn-more.five.desc' | translate }}
       </p>
     </li>
-    <li class="glow dm700 section-text-shadow">
-      <h1><span class="list-item-number">6</span> Zodiac Compatibility</h1>
+    <li
+      class="glow section-text-shadow"
+      [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    >
+      <h1>
+        <span class="list-item-number">{{ 'learn-more.six.num' | translate }}</span>
+        {{ 'learn-more.six.title' | translate }}
+      </h1>
       <p>
-        We think astrology is fun. You tell us your birthday, and we tell you if the stars align
-        with everyone you meet.
+        {{ 'learn-more.six.desc' | translate }}
       </p>
     </li>
-    <li class="glow dm700 section-text-shadow">
-      <h1><span class="list-item-number">7</span> Likeable Content</h1>
+    <li
+      class="glow section-text-shadow"
+      [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    >
+      <h1>
+        <span class="list-item-number">{{ 'learn-more.seven.num' | translate }}</span>
+        {{ 'learn-more.seven.title' | translate }}
+      </h1>
       <p>
-        We don't want you waiting for a match to know if someone's interested. You can like their
-        content too, and we'll send them a notification that gives them the chance to talk to you.
+        {{ 'learn-more.seven.desc' | translate }}
       </p>
     </li>
-    <li class="glow dm700 section-text-shadow">
-      <h1><span class="list-item-number">8</span> Conversational Arabic</h1>
+    <li
+      class="glow section-text-shadow"
+      [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    >
+      <h1>
+        <span class="list-item-number">{{ 'learn-more.eight.num' | translate }}</span>
+        {{ 'learn-more.eight.title' | translate }}
+      </h1>
       <p>
-        We think it's about time apps talked like people did. We use the kind of Arabic normal
-        people speak every day, so you can feel at home.
+        {{ 'learn-more.eight.desc' | translate }}
       </p>
     </li>
-    <li class="glow dm700 section-text-shadow">
-      <h1><span class="list-item-number">9</span> Baby Pictures</h1>
+    <li
+      class="glow section-text-shadow"
+      [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    >
+      <h1>
+        <span class="list-item-number">{{ 'learn-more.nine.num' | translate }}</span>
+        {{ 'learn-more.nine.title' | translate }}
+      </h1>
       <p>
-        We think love is better when it's fun. That's why we let you generate a realistic baby photo
-        based on a photo of you and your match at the touch of a finger.
+        {{ 'learn-more.nine.desc' | translate }}
       </p>
     </li>
-    <li class="glow dm700 section-text-shadow">
-      <h1><span class="list-item-number">10</span> Who Liked You</h1>
+    <li
+      class="glow section-text-shadow"
+      [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    >
+      <h1>
+        <span class="list-item-number">{{ 'learn-more.ten.num' | translate }}</span>
+        {{ 'learn-more.ten.title' | translate }}
+      </h1>
       <p>
-        We let you know if someone likes you even before you've seen their profile. Because that's
-        what your mother does.
+        {{ 'learn-more.ten.desc' | translate }}
       </p>
     </li>
-    <li class="glow dm700 section-text-shadow">
-      <h1><span class="list-item-number">11</span> Secret Matches</h1>
+    <li
+      class="glow section-text-shadow"
+      [ngClass]="translate.currentLang === 'en' ? 'dm700' : 'ar700'"
+    >
+      <h1>
+        <span class="list-item-number">{{ 'learn-more.eleven.num' | translate }}</span>
+        {{ 'learn-more.eleven.title' | translate }}
+      </h1>
       <p>
-        We haven't forgetten about your mother. She loves to play matchmaker as much as we do. So we
-        let family members anonymously insert profiles they like into your stack. But as always, the
-        choice is yours.
+        {{ 'learn-more.eleven.desc' | translate }}
       </p>
     </li>
   </ol>

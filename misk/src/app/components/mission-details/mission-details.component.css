@@ -5,6 +5,7 @@
 .mission-list p {
   font-size: 1.5rem;
   padding: 1rem;
+  line-height: 1.5em;
 }
 
 h1 {
@@ -26,6 +27,10 @@ li {
   margin-top: 5rem;
 }
 
+.ar700 {
+  text-align: right;
+}
+
 @media (min-width: 48em) {
   .mission-list {
     padding: 8rem;
@@ -34,6 +39,7 @@ li {
   .mission-list p {
     font-size: 2rem;
     width: 90%;
+    line-height: 1.5em;
   }
 
   h1 {
