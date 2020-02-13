@@ -168,21 +168,25 @@ textarea {
 .dm200 {
   font-family: 'DM Sans', sans-serif;
   font-weight: 200;
+  direction: ltr;
 }
 
 .dm300 {
   font-family: 'DM Sans', sans-serif;
   font-weight: 300;
+  direction: ltr;
 }
 
 .dm500 {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
+  direction: ltr;
 }
 
 .dm700 {
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
+  direction: ltr;
 }
 
 .highlight-link {
