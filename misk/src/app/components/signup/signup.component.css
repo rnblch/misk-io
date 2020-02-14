@@ -3,11 +3,6 @@
   margin-bottom: 0;
 }
 
-.email-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .button {
   max-height: 45px;
   border-radius: 35px;
