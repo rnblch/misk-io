@@ -14,7 +14,7 @@
     >
       <mat-form-field class="email" [ngClass]="translate.currentLang === 'ar' ? 'ar-input' : ''">
         <input
-          [ngClass]="translate.currentLang === 'en' ? 'dm400' : 'ar400'"
+          [ngClass]="translate.currentLang === 'en' ? 'dm500' : 'ar400'"
           [(ngModel)]="email"
           matInput
           type="email"
@@ -26,7 +26,7 @@
       </mat-form-field>
       <button
         class="button background-glow slate"
-        [ngClass]="translate.currentLang === 'en' ? 'dm400' : 'ar700'"
+        [ngClass]="translate.currentLang === 'en' ? 'dm500' : 'ar700'"
         mat-raised-button
         (click)="submit()"
       >
