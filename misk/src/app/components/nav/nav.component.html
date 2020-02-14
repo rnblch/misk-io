@@ -50,10 +50,10 @@
   </mat-toolbar>
 
   <mat-sidenav-container fxFlexFill class="sidenav-container">
-    <mat-sidenav class="sidenav background-glow" position="end" #sidenav>
+    <mat-sidenav class="sidenav background-slate" position="end" #sidenav>
       <mat-nav-list fxLayout="column">
         <ul title="Main Menu">
-          <li class="sidenav-item slate">
+          <li class="sidenav-item glow">
             <a
               [routerLink]="['/story']"
               (click)="sidenav.close()"
@@ -62,7 +62,7 @@
               >{{ 'nav.story' | translate }}</a
             >
           </li>
-          <li class="sidenav-item slate">
+          <li class="sidenav-item glow">
             <a
               [routerLink]="['/contact']"
               (click)="sidenav.close()"
@@ -79,7 +79,7 @@
               class="navbar-mobile-link"
               rel="noopener nofollow"
               target="_blank"
-              ><img src="../../assets/twitter-nav-mobile.svg" class="navbar-social-icon" />
+              ><img src="../../assets/twitter-icon.svg" class="navbar-social-icon" />
               <span class="homepage-link">Twitter</span></a
             >
           </li>
@@ -89,17 +89,17 @@
               rel="noopener nofollow"
               target="_blank"
               class="navbar-mobile-link"
-              ><img src="../../assets/instagram-nav-mobile.svg" class="navbar-social-icon" />
+              ><img src="../../assets/instagram-icon.svg" class="navbar-social-icon" />
               <span class="homepage-link">Instagram</span></a
             >
           </li>
-          <li class="navbar-social-item" id="fb-mobile-icon">
+          <li class="navbar-social-item">
             <a
               href="https://www.facebook.com/miskappofficial"
               rel="noopener nofollow"
               target="_blank"
               class="navbar-mobile-link"
-              ><img src="../../assets/facebook-nav-mobile.svg" class="navbar-social-icon" />
+              ><img src="../../assets/facebook-icon.svg" class="navbar-social-icon" />
               <span class="homepage-link">Facebook</span></a
             >
           </li>
